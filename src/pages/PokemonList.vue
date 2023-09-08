@@ -17,9 +17,7 @@ export default {
     limit: { type: Number, default: 151 },
     offset: { type: Number, default: 0 },
   },
-  components: {
-    PokemonColumn
-  },
+  components: { PokemonColumn },
   watch: {
     $route () {
       this.render();
@@ -27,8 +25,7 @@ export default {
   },
   data() {
     return {
-      pokemons: [],
-      search: ''
+      pokemons: []
     }
   },
   created: function() {

@@ -21,4 +21,6 @@ npm run lint
 ```
 
 ### node version fixes
-export NODE_OPTIONS=--openssl-legacy-provider 
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
