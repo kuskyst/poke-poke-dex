@@ -1,0 +1,219 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700);
+
+/* 全体 */
+* { margin: 0px; padding: 0px; }
+a { text-decoration: none; }
+a ,a:hover, a:visited{ color: inherit; }
+body { font-family: 'Noto Sans JP', sans-serif; -webkit-touch-callout: none; font-size: 20px; }
+#main { min-height: 800px; }
+
+/* animation */
+.fadeIn { animation: fadeIn 1s forwards; }
+.fadeUpIn { animation: fadeUpIn 1s forwards; }
+.fadeOut { animation: fadeOut 1s forwards; }
+.fadeLeftOut { animation: fadeLeftOut 0.4s forwards; }
+.fadeRightOut { animation: fadeRightOut 0.4s forwards; }
+.fadeLeftIn { animation: fadeLeftIn 0.4s forwards; }
+.fadeRightIn { animation: fadeRightIn 0.4s forwards; }
+@keyframes fadeUpIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeLeftOut {
+  0% { opacity: 100; transform: translateX(0px); }
+  100% { opacity: 0; transform: translateX(-150px); }
+}
+@keyframes fadeRightOut {
+  0% { opacity: 100; transform: translateX(0px); }
+  100% { opacity: 0; transform: translateX(150px); }
+}
+@keyframes fadeLeftIn {
+  0% { opacity: 0; transform: translateX(-150px); }
+  100% { opacity: 100; transform: translateX(0px); }
+}
+@keyframes fadeRightIn {
+  0% { opacity: 0; transform: translateX(150px); }
+  100% { opacity: 100; transform: translateX(0px); }
+}
+@keyframes fuwafuwa {
+  from, to { transform: none; }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}
+
+/* background-color */
+.bk-graypink { background-color: #f3b7b2; }
+
+.bk-red { background-color: #d12d27; }
+.bk-green { background-color: #48a04c; }
+.bk-blue { background-color: #3e8bce; }
+.bk-yellow { background-color: #f8d849; }
+.bk-gold { background-color: #faeaac; }
+.bk-silver { background-color: #adc4c4; }
+.bk-crystal { background-color: #bbdfed; }
+.bk-ruby { background-color: #88204a; }
+.bk-sapphire { background-color: #390d56; }
+.bk-emerald { background-color: #1d3a30; }
+.bk-firered { background-color: #d95733; }
+.bk-leafgreen { background-color: #acc651; }
+.bk-diamond { background-color: #315aa4; }
+.bk-pearl { background-color: #9b6c9d; }
+.bk-platinum { background-color: #d6ad76; }
+.bk-heartgold { background-color: #da8142; }
+.bk-soulsilver { background-color: #75759e; }
+.bk-white { background-color: #e7e3e8; }
+.bk-black { background-color: #000000; }
+.bk-white-2 { background-color: #d1d1d1; }
+.bk-black-2 { background-color: #404539; }
+.bk-x { background-color: #255190; }
+.bk-y { background-color: #c53c4a; }
+.bk-omega-ruby { background-color: #b22941; }
+.bk-alpha-sapphire { background-color: #2f50aa; }
+.bk-lets-go-pikachu { background-color: #f5df77; }
+.bk-lets-go-eevee { background-color: #b68052; }
+.bk-sun { background-color: #e8a239; }
+.bk-moon { background-color: #5db6ed; }
+.bk-ultra-sun { background-color: #dc7d30; }
+.bk-ultra-moon { background-color: #376cb3; }
+.bk-sword { background-color: #479fe0; }
+.bk-shield { background-color: #d32d5d; }
+.bk-legends-arceus { background-color: #9fc99c; }
+.bk-scarlet { background-color: #c63427; }
+.bk-violet { background-color: #9b4885; }
+.bk-red:after { border-left: 10px solid #d12d27; }
+.bk-green:after { border-left: 10px solid #48a04c; }
+.bk-blue:after { border-left: 10px solid #3e8bce; }
+.bk-yellow:after { border-left: 10px solid #f8d849; }
+.bk-gold:after { border-left: 10px solid #faeaac; }
+.bk-silver:after { border-left: 10px solid #adc4c4; }
+.bk-crystal:after { border-left: 10px solid #bbdfed; }
+.bk-ruby:after { border-left: 10px solid #88204a; }
+.bk-sapphire:after { border-left: 10px solid #390d56; }
+.bk-emerald:after { border-left: 10px solid #1d3a30; }
+.bk-firered:after { border-left: 10px solid #d95733; }
+.bk-leafgreen:after { border-left: 10px solid #acc651; }
+.bk-diamond:after { border-left: 10px solid #315aa4; }
+.bk-pearl:after { border-left: 10px solid #9b6c9d; }
+.bk-platinum:after { border-left: 10px solid #d6ad76; }
+.bk-heartgold:after { border-left: 10px solid #da8142; }
+.bk-soulsilver:after { border-left: 10px solid #75759e; }
+.bk-white:after { border-left: 10px solid #e7e3e8; }
+.bk-black:after { border-left: 10px solid #000000; }
+.bk-white-2:after { border-left: 10px solid #d1d1d1; }
+.bk-black-2:after { border-left: 10px solid #404539; }
+.bk-x:after { border-left: 10px solid #255190; }
+.bk-y:after{ background-color: #c53c4a; }
+.bk-omega-ruby:after { border-left: 10px solid #b22941; }
+.bk-alpha-sapphire:after { border-left: 10px solid #2f50aa; }
+.bk-lets-go-pikachu:after { border-left: 10px solid #f5df77; }
+.bk-lets-go-eevee:after { border-left: 10px solid #b68052; }
+.bk-sun:after { border-left: 10px solid #e8a239; }
+.bk-moon:after { border-left: 10px solid #5db6ed; }
+.bk-ultra-sun:after { border-left: 10px solid #dc7d30; }
+.bk-ultra-moon:after { border-left: 10px solid #376cb3; }
+.bk-sword:after { border-left: 10px solid #479fe0; }
+.bk-shield:after { border-left: 10px solid #d32d5d; }
+.bk-legends-arceus:after { border-left: 10px solid #9fc99c; }
+.bk-scarlet:after { border-left: 10px solid #c63427; }
+.bk-violet:after { border-left: 10px solid #9b4885; }
+
+.bk-normal { background-color: #aea886; }
+.bk-fire { background-color: #f45c19; }
+.bk-water { background-color: #4a96d6; }
+.bk-grass { background-color: #28b25c; }
+.bk-electric { background-color: #eaa317; }
+.bk-ice { background-color: #45a9c0; }
+.bk-fighting { background-color: #9a3d3e; }
+.bk-poison { background-color: #8f5b98; }
+.bk-ground { background-color: #916d3c; }
+.bk-flying { background-color: #7e9ecf; }
+.bk-psychic { background-color: #d56d8b; }
+.bk-bug { background-color: #989001; }
+.bk-rock { background-color: #878052; }
+.bk-ghost { background-color: #555fa4; }
+.bk-dragon { background-color: #454ba6; }
+.bk-dark { background-color: #7a0049; }
+.bk-steel { background-color: #9b9b9b;}
+.bk-fairy { background-color: #ffbbff; }
+.bk-normal:after { border-left: 10px solid #aea886; }
+.bk-fire:after { border-left: 10px solid #f45c19; }
+.bk-water:after { border-left: 10px solid #4a96d6; }
+.bk-grass:after { border-left: 10px solid #28b25c; }
+.bk-electric:after { border-left: 10px solid #eaa317; }
+.bk-ice:after { border-left: 10px solid #45a9c0; }
+.bk-fighting:after { border-left: 10px solid #9a3d3e; }
+.bk-poison:after { border-left: 10px solid #8f5b98; }
+.bk-ground:after { border-left: 10px solid #916d3c; }
+.bk-flying:after { border-left: 10px solid #7e9ecf; }
+.bk-psychic:after { border-left: 10px solid #d56d8b; }
+.bk-bug:after { border-left: 10px solid #989001; }
+.bk-rock:after { border-left: 10px solid #878052; }
+.bk-ghost:after { border-left: 10px solid #555fa4; }
+.bk-dragon:after { border-left: 10px solid #454ba6; }
+.bk-dark:after { border-left: 10px solid #7a0049; }
+.bk-steel:after { border-left: 10px solid #9b9b9b;}
+.bk-fairy:after { border-left: 10px solid #ffbbff; }
+/** color */
+.c-white { color: white; }
+.c-gray { color: #eee; }
+.c-normal { color: #aea886; }
+.c-fire { color: #f45c19; }
+.c-water { color: #4a96d6; }
+.c-grass { color: #28b25c; }
+.c-electric { color: #eaa317; }
+.c-ice { color: #45a9c0; }
+.c-fighting { color: #9a3d3e; }
+.c-poison { color: #8f5b98; }
+.c-ground { color: #916d3c; }
+.c-flying { color: #7e9ecf; }
+.c-psychic { color: #d56d8b; }
+.c-bug { color: #989001; }
+.c-rock { color: #878052; }
+.c-ghost { color: #555fa4; }
+.c-dragon { color: #454ba6; }
+.c-dark { color: #7a0049; }
+.c-steel { color: #9b9b9b;}
+.c-fairy { color: #ffbbff; }
+/** general */
+.hidden { visibility: hidden; }
+.flex { display: flex; }
+.j-center { justify-content: center; }
+.tx-left { text-align: left; }
+.tx-right { text-align: right; }
+.tx-center { text-align: center !important; }
+.h-508 { height: 300px; }
+.h-100 { height: 100%; }
+.w-30 { width: 30%; }
+.w-40 { width: 40%; }
+.w-50 { width: 50%; }
+.w-70 { width: 70%; }
+.w-80 { width: 80%; }
+.w-100 { width: 100%; }
+/* font */
+.f-italic { font-style: italic; }
+.f-bold { font-weight: bold; }
+.fs-12 { font-size: 12px; }
+.fs-18 { font-size: 18px; }
+/* margin */
+.mtb-auto { margin-top: auto; margin-bottom: auto; }
+.mr-2 { margin-right: 2px; }
+.mt-20 { margin-top: 20px; }
+.mt-20p { margin-top: 20%; }
+.mb-20 { margin-bottom: 20px; }
+.mrl-18 { margin-right: 18px; margin-left: 18px; }
+.mr-36 { margin-right: 36px; }
+.mr-56 { margin-right: 56px; }
+.ml-56 { margin-left: 56px; }
+/* padding */
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+.pl-30 { padding-left: 30px; }
