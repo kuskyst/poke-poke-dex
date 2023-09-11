@@ -40,7 +40,7 @@ export default {
       }
     }
   },
-  created: async function() {
+  async created() {
     window.addEventListener("scroll", this.scrollDisplay);
     window.addEventListener('touchmove', this.scrollDisplay);
     const response = await api.get(this.url);
@@ -63,7 +63,7 @@ export default {
         this.visible = top < window.innerHeight + 20;
       }
     },
-    loadComplete: function() { this.imgVisible = true; },
+    loadComplete() { this.imgVisible = true; },
   },
 }
 </script>

@@ -28,11 +28,11 @@ export default {
       pokemons: []
     }
   },
-  created: function() {
+  created() {
     this.render();
   },
   methods: {
-    render: function() {
+    render() {
       this.limit = this.$route.query.limit ? this.$route.query.limit : 151;
       this.offset = this.$route.query.offset ? this.$route.query.offset : 0;
 

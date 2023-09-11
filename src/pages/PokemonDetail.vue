@@ -165,17 +165,17 @@ export default {
       }
     }
   },
-  created: function() {
+  created() {
     this.render();
     window.addEventListener("resize", this.redrawResponsive);
   },
-  destroyed: function() {
+  destroyed() {
     this.loaded = this.imgVisible = this.shinyImgVisible = false;
     this.pokemon.stats = [];
     this.pokemon.flavorTexts = [];
   },
   beforeUnmount() { window.removeEventListener("resize", this.redrawResponsive); },
-  mounted: function () { this.redrawResponsive(); },
+  mounted () { this.redrawResponsive(); },
   watch: {
     $route () {
       this.render();
@@ -183,10 +183,8 @@ export default {
   },
   methods: {
     sleep: time => new Promise(resolve => setTimeout(resolve, time)),
-    setAnim: function(anim) {
-      this.anim = anim;
-    },
-    render: async function() {
+    setAnim(anim) { this.anim = anim; },
+    async render() {
       if (this.loaded) {
         await this.sleep(400);
         this.pokemon.stats = [];
@@ -230,22 +228,22 @@ export default {
     redrawResponsive() {
       this.sp = window.innerWidth < 1000;
     },
-    turnImgBack: function() {
+    turnImgBack() {
       this.pokemon.img =
         this.pokemon.img === this.pokemon.front && this.pokemon.back !== null ?
             this.pokemon.back : this.pokemon.front;
     },
-    turnShinyImgBack: function() {
+    turnShinyImgBack() {
       this.pokemon.shinyImg =
         this.pokemon.shinyImg === this.pokemon.shinyFront && this.pokemon.shinyBack !== null ?
             this.pokemon.shinyBack : this.pokemon.shinyFront;
     },
-    loadImgComplete: function() { this.imgVisible = true; },
-    loadShinyImgComplete: function() { this.shinyImgVisible = true; },
+    loadImgComplete() { this.imgVisible = true; },
+    loadShinyImgComplete() { this.shinyImgVisible = true; },
   },
   filters: {
-    filterWeight: function(v) { return v / 10 + ' kg'; },
-    filterHeight: function(v) { return v / 10 + ' m'; }
+    filterWeight(v) { return v / 10 + ' kg'; },
+    filterHeight(v) { return v / 10 + ' m'; }
   }
 }
 </script>
