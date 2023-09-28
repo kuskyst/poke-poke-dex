@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PokemonList from '@/pages/PokemonList'
-import PokemonDetail from '@/pages/PokemonDetail'
+import PokemonList from '@/pages/List'
+import PokemonDetail from '@/pages/Detail'
 
 Vue.use(Router)
 

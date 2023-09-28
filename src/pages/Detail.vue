@@ -120,7 +120,7 @@
   </div>
 </template>
 <script>
-import api from '@/services/Axios'
+import api from '@/js/Axios'
 import BarChart from '@/components/BarChart'
 import Loading from '@/components/Loading'
 

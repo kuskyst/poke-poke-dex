@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import api from '@/services/Axios'
-import PokemonColumn from '@/components/PokemonColumn'
+import api from '@/js/Axios'
+import PokemonColumn from '@/components/Column'
 
 export default {
   props:{
