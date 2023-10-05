@@ -1,5 +1,12 @@
 # poke-poke-dex
 
+| # | |
+| ---- | ---- |
+| Language| Vue.js 2 |
+| Transition | vue-router |
+| Asynchronous | Axios |
+| UI Component | vue-loading-template, vue-chart.js |
+
 ## Project setup
 ```
 npm install
