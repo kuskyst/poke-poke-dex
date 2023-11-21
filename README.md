@@ -1,5 +1,7 @@
 # poke-poke-dex
 
+https://kuskyst.github.io/poke-poke-dex-vue/
+
 | # | |
 | ---- | ---- |
 | Language| Vue.js 2 |
