@@ -1,6 +1,6 @@
 module.exports = {
   outputDir: 'docs',
-  publicPath: './',
+  publicPath: '/poke-poke-dex-vue',
   pages: {
       index: {
         entry: "src/main.js",
@@ -11,7 +11,7 @@ module.exports = {
     port: 8000,
     disableHostCheck: true,
     historyApiFallback: {
-      index: './'
+      index: '/poke-poke-dex-vue'
     }
   },
   pwa: {
