@@ -11,7 +11,7 @@ module.exports = {
     port: 8000,
     disableHostCheck: true,
     historyApiFallback: {
-      index: '/'
+      index: './'
     }
   },
   pwa: {
